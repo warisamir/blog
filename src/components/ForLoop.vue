@@ -4,13 +4,36 @@
     <li v-for="item in tech" :key="item">
         {{ item }}}</li>
 </ul>
+<br/>
+<br/>
+<ul>
+    <li v-for="user in user" :key="user">Name is{{ user.name  }}, <br/>
+    Email is{{ user.email}} <br/></li>
+</ul>
 </template>
 <script>
 export default {
     name:"ForLoop",
-    data(){
+    data() {
         return {
-            tech:["Java","php","python","html"]
+            tech:["Java","php","python","html"],
+            user:[
+                {
+                    name:"Anil",
+                    email:'anil@test.com',
+                    phone:122334,
+                },
+                {
+                    name:"bruce",
+                    email:'bruce@test.com',
+                    phone:122335,
+                },
+                {
+                    name:"clark",
+                    email:'clark@test.com',
+                    phone:122336,
+                }
+            ]
         }
     }
 }
