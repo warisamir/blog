@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HomeWork ></HomeWork>
+<laonAmount></laonAmount>
+<InputForm></InputForm> -->
+<HomeLate/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HomeLate from './components/HomeLate.vue'
+// import InputForm from './components/InputForm.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// HelloWorld,
+    // HomeWork,
+    // InputForm,
+    // laonAmount
+// import HomeWork from './components/Home.vue'
+// import laonAmount from './components/laonAmount.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeLate
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+
+h1{
+  color:yellow
 }
 </style>
