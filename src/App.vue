@@ -1,5 +1,6 @@
 <template>
   <ConditionRendering/>
+  <ForLoop/>
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/>
   <HomeWork ></HomeWork>
 <laonAmount></laonAmount>
@@ -9,6 +10,7 @@
 
 <script>
 import ConditionRendering from './components/ConditionRendering.vue'
+import  ForLoop from './components/ForLoop.vue'
 // import HomeLate from './components/HomeLate.vue'
 // import InputForm from './components/InputForm.vue'
 // import HelloWorld from './components/HelloWorld.vue'
@@ -22,6 +24,7 @@ export default {
     // HomeWork,
     // InputForm,
     ConditionRendering,
+    ForLoop,
     // laonAmount,
     // HomeLate
   }
