@@ -1,17 +1,15 @@
 <template>
 
 <h2>Parent Component</h2>
-
-<HtmlBind/>
+<ClassBinding/>
 </template>
 
 <script>
-import HtmlBind from './components/HtmlBind.vue';
-
+import ClassBinding from './components/ClassBinding.vue';
 export default {
   name: 'App',
   components: {
-    HtmlBind,
+    ClassBinding
   },
   
 }
