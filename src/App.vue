@@ -1,15 +1,18 @@
 <template>
-  <UseRef/>
+  <!-- <UseRef/> -->
+  <DatabingForm/>
 </template>
 
 <script>
-import UseRef from './components/UseRef.vue';
+import DatabingForm from './components/DatabingForm.vue';
+// import UseRef from './components/UseRef.vue';
 
 
 export default {
   name: 'App',
   components: {
-      UseRef
+      // UseRef
+      DatabingForm
   },
 }
 </script>
