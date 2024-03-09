@@ -1,7 +1,7 @@
 <template>
 <h1>Home Component</h1>
 <h2>candidate {{ email }}</h2>
-<h4>name :{{ getName("burce") }}</h4>
+<h4>name :{{ getName("datagener") }}</h4>
 <h3>al data :{{ getData().email }}</h3>
 
 
