@@ -1,26 +1,35 @@
 <template>
-
-<h2>Parent Component</h2>
-<PropsPassing/>
+  <h1>User Name: {{ UserName }}</h1>
+<SiblingFile :getUser="getUserName"/>
 </template>
 
 <script>
+import SiblingFile from './components/SiblingFile.vue';
 
-import PropsPassing from './components/PropsPassing.vue';
 
 export default {
   name: 'App',
-  components: {
-    PropsPassing,
-
+  data(){
+    return{
+      UserName:""
+    }
   },
-  
+  components: {
+      SiblingFile
+  },
+  //props are passing from parent to child
+  methods:{
+    getUserName(UserName){
+      // passing a function from parent component to child component
+       this.UserName=UserName
+    }
+  }
 }
 </script>
 
 <style scoped>
 
 h1{
-  color:yellow
+  color:chocolate;
 }
 </style>
