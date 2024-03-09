@@ -1,15 +1,18 @@
 <template>
 
 <h2>Parent Component</h2>
-<ClassBinding/>
+<PropsPassing/>
 </template>
 
 <script>
-import ClassBinding from './components/ClassBinding.vue';
+
+import PropsPassing from './components/PropsPassing.vue';
+
 export default {
   name: 'App',
   components: {
-    ClassBinding
+    PropsPassing,
+
   },
   
 }
