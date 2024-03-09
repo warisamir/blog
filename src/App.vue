@@ -1,29 +1,16 @@
 <template>
-  <h1>User Name: {{ UserName }}</h1>
-<SiblingFile :getUser="getUserName"/>
+  <UseRef/>
 </template>
 
 <script>
-import SiblingFile from './components/SiblingFile.vue';
+import UseRef from './components/UseRef.vue';
 
 
 export default {
   name: 'App',
-  data(){
-    return{
-      UserName:""
-    }
-  },
   components: {
-      SiblingFile
+      UseRef
   },
-  //props are passing from parent to child
-  methods:{
-    getUserName(UserName){
-      // passing a function from parent component to child component
-       this.UserName=UserName
-    }
-  }
 }
 </script>
 

@@ -15,7 +15,7 @@ export default{
         }
     },
     props:{
-        // here  this is  prop function which is used to pass data from child `SiblingFile` to parent          to child
+        // here  this is  prop function which is used to pass data from child `SiblingFile`          to child
         getUser:Function
     }
 }
