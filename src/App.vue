@@ -1,18 +1,15 @@
 <template>
-  <!-- <UseRef/> -->
-  <DatabingForm/>
+  <h1>Main Component</h1>
+<NonProps item="some data" name="user-cmd"/>
 </template>
 
 <script>
-import DatabingForm from './components/DatabingForm.vue';
-// import UseRef from './components/UseRef.vue';
-
+import NonProps from './components/NonProps.vue'
 
 export default {
   name: 'App',
   components: {
-      // UseRef
-      DatabingForm
+    NonProps
   },
 }
 </script>
