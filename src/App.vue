@@ -1,15 +1,15 @@
 <template>
   <h1>Main Component</h1>
-<NonProps item="some data" name="user-cmd"/>
+<NonProp item="some data" name="user-cmd"/>
 </template>
 
 <script>
-import NonProps from './components/NonProps.vue'
+import NonProp from './components/NonProp.vue'
 
 export default {
   name: 'App',
   components: {
-    NonProps
+    NonProp,
   },
 }
 </script>
@@ -19,4 +19,4 @@ export default {
 h1{
   color:chocolate;
 }
-</style>
+</style>./components/NonProp.vue
