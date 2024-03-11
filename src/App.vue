@@ -1,15 +1,21 @@
 <template>
   <h1>Main Component</h1>
-<NonProp item="some data" name="user-cmd"/>
+<!-- <CompuTed/> -->
+<WatchMain/>
 </template>
 
 <script>
-import NonProp from './components/NonProp.vue'
+import WatchMain from './components/WatchMain.vue';
+
+// import CompuTed from './components/CompuTed.vue';
+// import NonProp from './component/NonProp';
+
 
 export default {
   name: 'App',
   components: {
-    NonProp,
+    // CompuTed,
+    WatchMain
   },
 }
 </script>
@@ -19,4 +25,4 @@ export default {
 h1{
   color:chocolate;
 }
-</style>./components/NonProp.vue
+</style>
