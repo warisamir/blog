@@ -1,40 +1,29 @@
 <template>
-  <div>
-  <h1>Main Component</h1>
-  <MutipleSlot >
- <template v-slot:header>
-  <h1 >Peter</h1> 
-</template>
-<template v-slot:content>
-  <h1 >A vvietnamian </h1> 
-</template>
-<template v-slot:footer>
-<button>Click me!</button>
-</template>
-</MutipleSlot>
-<MutipleSlot >
- <template v-slot:header>
-  <h1 >Faccebook</h1> 
-</template>
-<template v-slot:content>
-  <h1 >A Reactjs </h1> 
-</template>
-<template v-slot:footer>
+<h1>Main Component</h1>
+<!-- here tab="name should be match with the component  " -->
+<button @click="tab='JavaFile'">Press Java</button>
+<button @click="tab='NodeFile'">Press Node</button>
+<button @click="tab='PhpFile'">Press Php</button>
 
-</template>
-</MutipleSlot>
-</div>
+<component :is="tab"/>
 </template>
 
 <script>
-import MutipleSlot from './components/MutipleSlot.vue';
+import JavaFile from './Comp/JavaFile.vue';
+import NodeFile from './Comp/NodeFile.vue';
+import PhpFile from './Comp/PhpFile.vue';
 
 
 export default {
   name: 'App',
   components: {
-    MutipleSlot
+    JavaFile,NodeFile,PhpFile
   },
+  data(){
+    return {
+      tab:'JavaFile'
+    }
+  }
 }
 </script>
 

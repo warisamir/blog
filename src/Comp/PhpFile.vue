@@ -1,5 +1,5 @@
 <template>
-<button>Php</button>
+<h1>Php Content</h1>
 </template>
 <script>
 export default {
