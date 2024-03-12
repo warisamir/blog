@@ -1,24 +1,18 @@
 <template>
-
-<h1>Main Component</h1> 
-<!-- here tab="name should be match with the component  " -->
-<LifeCreate/>
+<LifeMount/>
 </template>
 
 <script>
-import LifeCreate from './Comp/LifeCreate.vue';
-
+import LifeMount from './Comp/LifeMount.vue';
 
 export default {
   name: 'App',
   components: {
-   LifeCreate
+   LifeMount
   }
 }
 </script>
-
 <style scoped>
-
 h1{
   color:chocolate;
 }
