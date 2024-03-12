@@ -7,15 +7,18 @@
 export default{
     name:'LifeCreate',
     data(){
-        return {
-            name:"Anil"
-        }
-    },
-    beforeCreate() {
-        console.warn("before create life cycle");
-    },
-    created() {
-        console.warn("create life cycle");
+    console.warn("Createdat data") 
+    return{
+      name:"Waris"
     }
+  },
+  beforeCreate(){
+    this.name="chandimal"
+  alert("before create")
+  },
+  created(){
+    this.name="chandimal"
+    alert("created")
+  }
 }
 </script>

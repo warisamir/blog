@@ -1,18 +1,18 @@
 <template>
-<h1>Main Component</h1>
+
+<h1>Main Component</h1> 
 <!-- here tab="name should be match with the component  " -->
-<teleport to="#fLifeooter">
-  <Teleport/>
-</teleport>
+<LifeCreate/>
 </template>
 
 <script>
-import Teleport from './Comp/TelePort.vue';
+import LifeCreate from './Comp/LifeCreate.vue';
+
 
 export default {
   name: 'App',
   components: {
-        Teleport
+   LifeCreate
   }
 }
 </script>
