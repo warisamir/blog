@@ -1,6 +1,6 @@
 <template>
 <h1>beforeMount and mounted {{ name }}</h1>
-<h2>cdoe stepUP</h2>
+<h2>code stepUP</h2>
 </template>
 <script>
 export default{
