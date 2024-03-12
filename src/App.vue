@@ -1,19 +1,26 @@
 <template>
-<LifeMount/>
+<h1>parent Component</h1>
+<button v-on:click="show=!show">toggle</button>
+<UnMount v-if="show"/>
 </template>
-
 <script>
-import LifeMount from './Comp/LifeMount.vue';
+import UnMount from './Comp/UnMount.vue';
+
 
 export default {
   name: 'App',
-  components: {
-   LifeMount
-  }
+  data(){
+    return {
+        show:true
+    }
+  },
+   components: {
+    UnMount
+}
 }
 </script>
 <style scoped>
 h1{
   color:chocolate;
 }
-</style>
+</style>.
